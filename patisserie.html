@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patisserie</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="patisserieStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="owlCarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlCarousel/owl.theme.default.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="dark center w80 flex">
+      <h4>Delphin Imperial</h4>
+      <img src="img/logo.png" alt="delphin lara">
+      <a href="index.html">BACK</a>
+  </header>
+
+  <div class="main center w80">
+    
+    <section>
+
+      <article class="light" id="miaMensa">
+        <h2 class="titles">Patisserie</h2>
+        <h2 class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h2>
+        <h2 class="titlesXS">Violet</h2>
+        <p>Violet will be at your disposal at Delphin Imperial anytime of the day where you can indulge yourself with pleasure of tea and coffee over delicious snacks, various kinds of cookies and fresh cakes prepared by award-winning dessert masters. You can enjoy the live music performances taking place at specific hours at Violet right next to the lobby.</p>
+        <img src="img/violet1.jpg" alt="violet">
+        <img src="img/violet2.jpg" alt="violet">
+        <img src="img/violet3.jpg" alt="violet">
+      </article>
+
+    </section>
+  </div>
+
+  <footer class="w80 dark center flex">
+    <img src="img/logo.png" alt="logo">
+    <p><i class="fas fa-map-marked-alt"></i> Delphin Imperial Hotel Lara, Kemeragzi Mevkii, Lara Beach, Kundu</p>
+    <p><i class="far fa-envelope"></i> Antalya 07110. Turkey</p>
+    <p><i class="fas fa-phone"></i> Tel: +90 242 320 07 07 Fax: +90 242 320 07 77</p>
+    <p><i class="fas fa-at"></i> Email: info@delphinimperial.com</p>
+    <div class="footerIcons flex">
+      <a class="styleLink dark" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a class="styleLink dark" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+      <a class="styleLink dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+  </footer>
+
+  <a href="#" class="scrollup">Наверх</a>
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- JQUERY-END -->
+
+  <!-- OWL CAROUSEL -->
+  <script src="owlCarousel/owl.carousel.min.js"></script>
+  <script>$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    autoplay:true,
+    smartSpeed:1000,
+        loop:true,
+    autoplayTimeout:2500,
+    });
+  });</script>
+  <!-- OWL CAROUSEL-END -->
+
+<!-- SCROLL -->
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+
+<!-- SCROLL-END -->
+
+  <!-- BTN TOP -->
+  <script type="text/javascript">
+if($(window).width()>768) {
+
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+
+}
+</script>
+  <!-- BTN TOP-END -->
+</body>
+</html>

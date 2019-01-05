@@ -1,0 +1,670 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 1600px; 
+    background: #F3F0EC;
+}
+.parallax-window {
+  min-height: 800px;
+  background: transparent;
+}
+
+/* Общие стили */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+
+}
+.styleNav {
+    list-style: none;
+    padding: 0;
+}
+.styleLink {
+    text-decoration: none;
+    margin: 0 10px;
+}
+.dark {
+    color: #EFEFEF;
+    background: #3A3A3A;
+}
+.light {
+    color: #3A3A3A; 
+    background: #fff;
+}
+.stars {
+    font-size: 12px;
+    color: #FCDE7D;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.w80 {
+    width: 80%;
+}
+.w100 {
+    width: 100%;
+}
+.p0 {
+    padding: 0;
+}
+.m0 {
+    margin: 0;
+}
+.h500 {
+    height: 500px;
+}
+.center {
+    margin: 0 auto;
+}
+.sectPosition {
+    margin: 30px auto;
+    padding-bottom: 30px;
+}
+.titles {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.titlesXS {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px auto;
+}
+.hidden {
+    overflow: hidden;
+}
+.lineH25 {
+    line-height: 25px;
+}
+.inline {
+    display: inline-block;
+}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('img/icon_top.png') no-repeat;
+}
+
+/* Частные стили */
+
+/* HEADER */
+
+header ul {
+    margin: auto 0;
+}
+.headerTop {
+    height: 63px;
+    justify-content: space-between;
+}
+.headerTop img {
+    width: 219px;
+    height: 118px;
+}
+.headerTop h4 {
+    margin: auto 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 22px;
+}
+.navLink {
+    position: relative;
+}
+.navItem {
+    transition: 0.5s;
+}
+.menu h5 {
+    display: none;
+}
+.navItem:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.navLink:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    top: 20px;
+    left: 25%;
+    transition: 0.5s;
+}
+.navLink:hover:after {
+    box-shadow: 0 5px 5px  #FEF3CC;
+    transition: 0.5s;
+}
+.star {
+    color: #FCDE7D;
+}
+
+/* HEADER-END */
+
+/* SECTION_1 ABOUT US */
+
+.aboutLeft p {
+    padding: 0 5%;
+}
+.aboutUs article img {
+    max-width: 600px;
+    max-height: 337px;
+}
+
+/* SECTION_1 ABOUT US-END */
+
+/* SECTION_3 ACCOMODATION */
+
+.rooms a {
+    transition: 0.5s;
+}
+.rooms a:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.accomodationRight h2 {
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 25px;
+}
+.accomodationRight p {
+    padding: 0 5%;
+    margin-top: 10px;
+    text-align: right;
+    line-height: 22px;
+}
+.rooms {
+    background: none;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+#suites, #rooms {
+    height: 133px;
+    text-decoration: none;
+    position: relative;
+}
+#suites:before, #rooms:before {
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    margin-left: -20%;
+    margin-top: 10%;
+    text-align: center;
+    color: rgba(238, 238, 238, 1.0);
+    font-size: 26px;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    transition: 0.5s;
+}
+#suites:before {
+    content: "SUITES";
+}
+#rooms:before {
+    content: "ROOMS";
+}
+#suites:after, #rooms:after {
+    content: "click for details";
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    margin-left: -20%;
+    margin-top: 10%;
+    text-align: center;
+    color: rgba(238, 238, 238, 0);
+    font-size: 26px;
+    width: 100%;
+    transition: 0.5s;
+}
+#suites:hover:before, #rooms:hover:before {
+    color: rgba(238, 238, 238, 0);
+    transition: 0.5s;
+}
+#suites:hover:after, #rooms:hover:after {
+    color: rgba(238, 238, 238, 1.0);
+    transition: 0.5s;
+}
+
+
+/* SECTION_3 ACCOMODATION-END */
+
+/* SECTION_5 FOOD&BEVERAGE */
+
+.food p {
+    padding: 2% 5%;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    line-height: 25px;
+}
+.food h2 {
+    background: none;
+}
+.food {
+    background-image: url(img/foodBG.jpg);
+    background-position: bottom;
+}
+.food article {
+    margin-top: 50px;
+    position: relative;
+}
+.food article a {
+    transition: 0.5s;
+}
+.food article a:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+#snack, #a-la-carte, #patesserie {
+    position: relative;
+    height: 133px;
+}
+#snack:before, #a-la-carte:before, #patesserie:before, #snack:after, #a-la-carte:after, #patesserie:after {
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    margin-left: -20%;
+    margin-top: 10%;
+    text-align: center;
+    color: rgba(238, 238, 238, 1);
+    font-size: 26px;
+    text-transform: uppercase;
+    width: 100%;
+    transition: 0.5s;
+}
+#a-la-carte:before {
+    content: "Restaurant";
+    background: rgba(0,0,0,0.4);
+}
+#snack:before {
+    content: "Snack Menu";
+    background: rgba(0,0,0,0.4);
+}
+#patesserie:before {
+    content: "Patisserie";
+    background: rgba(0,0,0,0.4);
+}
+#a-la-carte:after, #snack:after, #patesserie:after {
+    content: "click for details";
+    color: rgba(255,255,255,0);
+    text-transform: lowercase;
+}
+#snack:hover:before, #a-la-carte:hover:before, #patesserie:hover:before {
+    color: rgba(255,255,255,0);
+}
+#snack:hover:after, #a-la-carte:hover:after, #patesserie:hover:after {
+    color: rgba(255,255,255,1);
+}
+
+/* SECTION_5 FOOD&BEVERAGE-END */
+
+/* SECTION_7 ACTIVITIES */
+
+.activities p {
+    padding: 20px 5%;
+    text-align: center;
+    margin-top: 40px;
+}
+.activities:last-child {
+    margin-top: 100px;
+}
+.activities article {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.activities article .left {
+    margin-top: 5%;
+}
+.left ul {
+    margin-top: 10%;
+}
+.left ul li {
+    margin-top: 5%;
+}
+#logoXS {
+   width: 54px;
+   height: 54px; 
+   margin-top: 15%;
+}
+
+/* SECTION_7 ACTIVITIES-END */
+
+/* SECTION_9 SPA&WELLNESS */
+
+.spa {
+    overflow: hidden;
+}
+.spa p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.spa article a {
+    transition: 0.5s;
+}
+.spa article a:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #F3F0EC;
+    border: 1px solid #F3F0EC;
+    transition: 0.5s;
+}
+.btn:hover {
+    background: #F3F0EC;
+    color: #3a3a3a;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* SECTION_9 SPA&WELLNESS-END */
+
+/* SECTION_9 MEETING&SEMINAR */
+
+.seminar {
+    margin-bottom: 100px;
+}
+.seminar h4 {
+    text-align: center;
+}
+.seminar p {
+    text-align: center;
+}
+
+/* SECTION_9 MEETING&SEMINAR-END */
+
+/* FOOTER */
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+footer img {
+    width: 219px;
+    height: 118px;
+    margin-top: -63px;
+}
+footer p {
+    height: 20px;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.footerIcons {
+    margin: 20px auto;
+}
+.footerIcons a  {
+    transition: 0.5s;
+    position: relative;
+}
+.footerIcons a:hover {
+    transform: scale(1.4);
+    transition: 0.5s;
+    color: #FCDE7D;
+}
+.footerIcons a i {
+    font-size: 20px;
+}
+
+/* FOOTER-END */
+
+
+
+
+
+/* MOBILE VERSION */
+
+
+@media screen and (max-width: 1598px) {
+    .accomodation article {
+      grid-template-columns: 1fr;  
+    }
+    .accomodation article img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1488px) {
+   .headerTop {
+    width: 90%;
+   }
+   .aboutUs article {
+    grid-template-columns: 1fr;
+   } 
+   .aboutUs article img {
+    margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 1320px) {
+   .headerTop {
+    width: 100%;
+   } 
+   .activities article {
+    flex-direction: column-reverse;
+   }
+}
+
+@media screen and (max-width: 1188px) {
+   .navLink {
+    font-size: 14px;
+   }
+   .headerTop h4 {
+    display: none;
+   }
+   .headerTop img {
+    width: 110px;
+    height: 59px;
+    }
+    .styleLink {
+    margin: 0 8px;
+    }
+    .accomodation article {
+      width: 100%;  
+    }
+    .food article {
+        width: 100%;
+    }
+    .spa article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .parallax-window {
+        display: none;
+    }
+    section + .w80 {
+        width: 100%;
+    }
+    header {
+        height: 390px;
+        margin-top: 70px;
+    }
+    .headerTop {
+        flex-direction: column;
+    } 
+    .menu {
+        flex-direction: column;
+        height: 745px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .menu h5 {
+        display: block;
+        margin: 0 auto;
+        margin-top: -100px;
+        margin-bottom: 50px;
+
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .headerTop img {
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+        margin-top: -63px;
+    }
+    .menu h4 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    .menu ul {
+        margin-top: 0;
+        margin-bottom: 200px;
+    }
+    .navItem {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navLink {
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        margin-bottom: -1px;
+        padding-top: 15px;
+        text-align: center;
+        font-size: 26px;
+        border-bottom: 1px solid #F3F0EC;
+    }
+    .navLink:first-child {
+        border-top: 1px solid #F3F0EC; 
+    }
+    .navLink:hover {
+        color: #3A3A3A;
+        background: #F3F0EC;
+    }
+    .navLink:hover:after {
+        box-shadow: none;
+    }
+    .aboutUs {
+        padding-bottom: 0;
+    }
+    .aboutUs .grid {
+        grid-template-columns: 1fr;
+    } 
+    .aboutLeft p {
+        width: 90%;
+        text-align: center;
+    }
+    .grid img {
+        width: 100%;
+        margin: 0;
+    } 
+    .accomodation {
+        padding-bottom: 0;
+    }
+    .accomodation article {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .rooms {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .rooms a {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        }
+    .food {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .food h2 {
+        padding: 0 5%;
+    }
+    .food p {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        padding: 0 5%;
+        margin: 0;
+    }
+    .food article {
+        flex-direction: column;
+    }
+    .food article a {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .carousel {
+        margin: 0;
+        padding: 0;
+    }
+    .activities {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .activities article {
+        flex-direction: column;
+        width: 100%;
+    }
+    #logoXS {
+        margin: 25px auto;
+    }
+    .activities article img {
+        width: 100%;
+    }
+    .activities p:last-child {
+        margin: 0 auto;
+    }
+    .spa p {
+        width: 90%;
+    }
+    .spa article {
+        flex-direction: column;
+    }
+    .spa article a {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .seminar {
+        padding-bottom: 0;
+    }
+    .seminar p {
+        width: 100%;
+    }
+}
+

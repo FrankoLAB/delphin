@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suites</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="suitesStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="dark center w80 flex">
+      <h4>Delphin Imperial</h4>
+      <img src="img/logo.png" alt="delphin lara">
+      <a href="index.html">BACK</a>
+  </header>
+
+  <div class="main center w80 ">
+    <h2 class="titles dark">Suites</h2>
+    <section class="grid center w100 light">
+      <article class="suiteRoom light">
+        <h2 class="titles">Suite Room</h2>
+        <h2 class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h2>
+        <h2 class="titlesXS">"Mediterranean under your feet…"</h2>
+        <p>Would you like to listen to the tweets of the birds and sounds of Mediterranean while watching the sunset at your large bedroom terrace? After the breakfast and dinner served at your 58 m2-suit’s private terrace, your cocktail will be waiting for you next to the luxurious Jacuzzi located separately at your balcony… While your joy will be crowned with the fruit plate and campaign, let yourself into the enchanting world of Delphin Imperial…</p>
+        <img src="img/suiteRoom1.jpg" alt="suite room">
+        <img src="img/suiteRoom2.jpg" alt="suite room">
+      </article>
+      <article class="juniorSuite light">
+        <h2 class="titles">Junior Suite</h2>
+        <h2 class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h2>
+        <h2 class="titlesXS">"Peace and serenity waiting for you"</h2>
+        <p>Junior suits with breathtaking sea views are the address of peace and serenity…  In the 45 m2 area of the junior suits with two balconies, all details for your peace and comfort have been considered… With the decoration and illuminations, which are the results of a refined taste, and the peace added by the color white to your soul, feel yourself special…</p>
+        <img src="img/junSuit1.jpg" alt="junior suite">
+        <img src="img/junSuit2.jpg" alt="junior suite">
+      </article>
+    </section>
+    </div>
+
+  <footer class="w80 dark center flex">
+    <img src="img/logo.png" alt="logo">
+    <p><i class="fas fa-map-marked-alt"></i> Delphin Imperial Hotel Lara, Kemeragzi Mevkii, Lara Beach, Kundu</p>
+    <p><i class="far fa-envelope"></i> Antalya 07110. Turkey</p>
+    <p><i class="fas fa-phone"></i> Tel: +90 242 320 07 07 Fax: +90 242 320 07 77</p>
+    <p><i class="fas fa-at"></i> Email: info@delphinimperial.com</p>
+    <div class="footerIcons flex">
+      <a class="styleLink dark" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a class="styleLink dark" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+      <a class="styleLink dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+    
+  </footer>
+
+  <a href="#" class="scrollup">Наверх</a>
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- JQUERY-END -->
+
+  <!-- BTN TOP -->
+  <script type="text/javascript">
+if($(window).width()>768) {
+
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+
+}
+</script>
+  <!-- BTN TOP-END -->
+</body>
+</html>
